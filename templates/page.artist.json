@@ -1,12 +1,14 @@
 {
     "sections": {
-      "main": {
-        "type": "artist-page",
-        "settings": {
-          "padding_top": 36,
-          "padding_bottom": 36
+        "main": {
+            "type": "main-page",
+            "settings": {
+                "padding_top": 50,
+                "padding_bottom": 50
+            }
         }
-      }
-    }
-  }
-  
+    },
+    "order": [
+        "main"
+    ]
+}
