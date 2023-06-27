@@ -320,5 +320,92 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+      interface CartItem {
+  id: string;
+  name: string;
+  quantity: number;
+  price: number;
+}
+
+interface CartState {
+  items: CartItem[];
+  isUpdating: boolean;
+}
+
+class ShopifyCart {
+  private state: CartState;
+
+  constructor() {
+    this.state = {
+      items: [],
+      isUpdating: false,
+    };
+  }
+
+  getItems(): CartItem[] {
+    return this.state.items;
+  }
+
+  addItem(item: CartItem): void {
+    const existingItem = this.state.items.find((i) => i.id === item.id);
+
+    if (existingItem) {
+      existingItem.quantity += item.quantity;
+    } else {
+      this.state.items.push(item);
+    }
+
+    this.updateCart();
+  }
+
+  removeItem(itemId: string): void {
+    this.state.items = this.state.items.filter((item) => item.id !== itemId);
+    this.updateCart();
+  }
+
+  changeQuantity(itemId: string, newQuantity: number): void {
+    const item = this.state.items.find((i) => i.id === itemId);
+
+    if (item) {
+      item.quantity = newQuantity;
+      this.updateCart();
+    }
+  }
+
+  updateCart(): void {
+    this.state.isUpdating = true;
+
+    // Simulate submitting the cart changes to Shopify via AJAX
+    setTimeout(() => {
+      this.state.isUpdating = false;
+      console.log('Cart updated:', this.state);
+    }, 1000);
+  }
+}
+
+// Example usage
+const cart = new ShopifyCart();
+
+cart.addItem({
+  id: 'product1',
+  name: 'Product 1',
+  quantity: 2,
+  price: 10,
+});
+
+cart.addItem({
+  id: 'product2',
+  name: 'Product 2',
+  quantity: 1,
+  price: 20,
+});
+
+console.log(cart.getItems());
+
+cart.changeQuantity('product1', 3);
+cart.removeItem('product2');
+
+    </script>
   </body>
 </html>
