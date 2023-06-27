@@ -2,9 +2,10 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "17b1392e-3db8-431a-ac67-0093af45301a": {
@@ -14,7 +15,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/SL_123119_26540_09.jpg",
-            "heading": "Image slide",
+            "heading": "Joe Artist Lookpage",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
             "button_label": "Button label",
