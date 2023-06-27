@@ -134,12 +134,71 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "28bd3de6-edbd-4336-994f-fc607f6302f6": {
+      "type": "multirow",
+      "blocks": {
+        "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-0": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/records-for-sale.jpg",
+            "caption": "YouTube",
+            "heading": "Safe For YouTube & Other Platforms",
+            "text": "<p>Our Royalty Free Music is copyright safe, cleared and ready to use for YouTube, Facebook, Instagram, TikTok, Twitch, Vimeo, and most Platforms: Your videos are cleared forever, even if you close your membership or account.<\/p>",
+            "button_label": "Know more",
+            "button_link": "#"
+          }
+        },
+        "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/indie-music-concert.jpg",
+            "caption": "Free",
+            "heading": "Use Forever",
+            "text": "<p>All Pay-per-Track and All Access subscription plans get you a perpetual license valid forever. You want to cancel your membership?Not a problem! All your projects using our royalty free music are cleared forever!<\/p>",
+            "button_label": "Know more",
+            "button_link": "#"
+          }
+        },
+        "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/violin-base--on-music-sheets.jpg",
+            "caption": "Free Music",
+            "heading": "Free Music for Videos",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Know more",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-0",
+        "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-1",
+        "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-2"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "17b1392e-3db8-431a-ac67-0093af45301a",
     "ef1d34d5-f932-43b9-99ab-24b2153a313a",
-    "48d40d58-77d0-4980-b63f-bbfd9302e072"
+    "48d40d58-77d0-4980-b63f-bbfd9302e072",
+    "28bd3de6-edbd-4336-994f-fc607f6302f6"
   ]
 }
