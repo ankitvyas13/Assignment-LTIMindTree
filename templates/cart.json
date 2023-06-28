@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "88705ad1-bdff-40d6-b9c7-57b80f50e020": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% comment %} Create liquid variable for collection {% endcomment %}\n{% assign upsellCollection = 'upsell-products' %}\n<div class=\"c-upsell js-upsell\">\n    {% comment %} Use Product ID as Data Attribute which we will use for Add to Cart Event {% endcomment %}\n    {% for product in collections[upsellCollection].products %}\n    <div class=\"c-upsell__product js-product\" data-product-id=\"{{ product.id}}\">\n        <div class=\"c-upsell__productImage\">\n            {% comment %} Fetch Product Images{% endcomment %}\n            {% for image in product.images %}\n            <img class=\"c-upsell__innerImage\" src=\"{{ image | img_url: '586x' }}\" alt=\"Product Img\" \/>\n            {% endfor %}\n        <\/div>\n        {% comment %} Fetch Product title & Price {% endcomment %}\n        <h2 class=\"c-upsell__productTitle\">{{ product.title }} <\/h2>\n        <p class=\"c-upsell__productPrice\"> {{ product.price }}<\/p>\n        {% comment %} Add to Cart Button {% endcomment %}\n        <a href=\"#\" class=\"c-upsell__atc js-atc\">Add to Cart<\/a>\n    <\/div>\n    {% endfor %}\n<\/div>\n{% comment %} Now we're done with Liquid code and collection will be appeared on where we add it {% endcomment %}\n\n\n<script>\nfunction upsellProduct() {\n\t\/\/ Create an empty Array in which we'll be pushing our product ID \n\tconst upsellProductArr = [];\n\t\/\/get the Product ID from Attribute\n\tconst productID = document.querySelector('.js-product').getAttribute('data-product-id');\n\t\/\/ Now push this product ID to Array\n\tupsellProductArr.push(productID);\n\t\/\/ Console.log to check you're pushing correct ID into array\n\tconsole.log(upsellProductArr);\n}\n\/\/ Let's Find our ATC button\nconst button = document.querySelector('.js-atc');\n\t\/\/ Now Add click event use our Array to add to cart the Product \nbutton.addEventListener('click', event => {\n\tupsellProduct();\n\t\/\/ This is CartJS API - Attaching link for reference \n\tCartJS.addItem(upsellProductArr[0], quantity = 1);\n});\n\/\/ Done\n<\/script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "featured-collection",
+    "88705ad1-bdff-40d6-b9c7-57b80f50e020"
+  ]
+}
