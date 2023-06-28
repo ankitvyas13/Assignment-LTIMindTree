@@ -1,1 +1,1 @@
-console.log("Hello Tradewind!");
+console.log("Hello Tradewind CSS");
