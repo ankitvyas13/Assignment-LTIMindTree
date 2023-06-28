@@ -14,7 +14,7 @@
         "template--19724039422272__17b1392e-3db8-431a-ac67-0093af45301a-168789367347bc0d43-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SL_123119_26540_09.jpg",
+            "image": "shopify:\/\/shop_images\/music-fans-at-a-venue.jpg",
             "heading": "Joe Artist Lookpage",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -32,7 +32,7 @@
         "template--19724039422272__17b1392e-3db8-431a-ac67-0093af45301a-168789367347bc0d43-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SL-123119-26540-31_1.jpg",
+            "image": "shopify:\/\/shop_images\/crowd-loving-music.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -71,7 +71,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "shirts",
+        "collection": "featured-products",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": true,
@@ -125,7 +125,6 @@
 
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/silver-cornet-instrument-on-sheet-music.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -145,7 +144,6 @@
         "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-0": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/records-for-sale.jpg",
             "caption": "YouTube",
             "heading": "Safe For YouTube & Other Platforms",
             "text": "<p>Our Royalty Free Music is copyright safe, cleared and ready to use for YouTube, Facebook, Instagram, TikTok, Twitch, Vimeo, and most Platforms: Your videos are cleared forever, even if you close your membership or account.<\/p>",
@@ -156,7 +154,6 @@
         "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-1": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/indie-music-concert.jpg",
             "caption": "Free",
             "heading": "Use Forever",
             "text": "<p>All Pay-per-Track and All Access subscription plans get you a perpetual license valid forever. You want to cancel your membership?Not a problem! All your projects using our royalty free music are cleared forever!<\/p>",
@@ -167,7 +164,6 @@
         "template--19724039422272__28bd3de6-edbd-4336-994f-fc607f6302f6-16878955138fa40ae2-2": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/violin-base--on-music-sheets.jpg",
             "caption": "Free Music",
             "heading": "Free Music for Videos",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
