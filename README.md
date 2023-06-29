@@ -1,7 +1,18 @@
-# Tradewind Shopify Theme
+# Typescript Shopify Theme
 
-Tradewind is a theme built for Shopify Online Store 2.0 with Tailwind CSS and Web Components with support for Typescript using Vite.
+## Task 1: Create Joe Artist lookpage 
 
-> :warning: **Note:** This is a work in progress. Star the repo for updates or follow me on twitter: [https://twitter.com/josephbona](https://twitter.com/josephbona)
+**You can find the page in the below store**
 
+**Store URL:** borghini-test.myshopify.com
+
+**Password:** naylye
+
+**Lookpage URL:** https://borghini-test.myshopify.com/pages/artist
+
+## Task 2: Cart Update/remove products and add upsell products at bottom
+
+The cart update/remove functionality added with typescript
+
+At the end of cart, Upsell functionality has also been added.
 
